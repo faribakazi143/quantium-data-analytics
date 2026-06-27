@@ -33,10 +33,10 @@ rows), engineered pack-size and brand features, and merged in customer segments
 **Problem:** Did a Feb–Apr 2019 store-layout trial (stores 77, 86, 88) actually lift
 sales, or was it just seasonality?
 
-**Approach:** Built a control-store experimental design — matched each trial store to
-a control using pre-trial Pearson correlation + magnitude distance on monthly sales
-and customer counts, scaled the control, and tested each trial month against the
-control's 5–95% confidence band (t-test, 7 d.o.f.).
+**Approach:** Built a control-store experimental design:
+- **Match** — paired each trial store with the control whose pre-trial sales and customer counts tracked it most closely (Pearson correlation + magnitude distance)
+- **Scale** — adjusted the control to the trial store's level so the two are directly comparable
+- **Test** — checked each trial month against the control's 5–95% confidence band (t-test, 7 d.o.f.); outside the band = a significant effect
 
 **Findings:**
 - Trial 77 → control 233: significant sales uplift (Mar & Apr)
@@ -52,25 +52,36 @@ control's 5–95% confidence band (t-test, 7 d.o.f.).
 **Problem:** Turn the analysis into a recommendation Julia can use for the category
 review.
 
-**Approach:** Built a client-facing deck using the Pyramid Principle — lead with the
-recommendation, support with segment, brand/pack, and trial evidence.
+**Approach:** Built a client-facing deck using the Pyramid Principle — led with the
+recommendation, then supported it with the segment, brand/pack, and trial evidence.
 
-**Recommendation:** Protect high-volume family shoppers on price and pack
-availability, target premium-willing Mainstream singles/couples with higher-margin
-ranges, anchor space around Kettle + 175g packs, and roll out the new layout
-(confirming why store 86 differed first).
-
-📄 `QVI_Task3_ClientReport.pdf` · 📊 `QVI_Task3_ClientReport.pptx`
+**Recommendation:**
+- **Protect the volume base** — keep competitive pricing and reliable stock of popular sharing packs for Budget Older & Young Families
+- **Target premium-willing shoppers** — Mainstream young/midage singles & couples, with higher-margin ranges and impulse placement
+- **Lead with the winning brand & pack** — anchor space and promotions around Kettle and the 175g format
+- **Roll out the new layout** — significant uplift in stores 77 & 88; confirm why store 86 differed before extending
 
 ---
 
 ## Client Communication
-**Email to Category Manager (Julia)** — a professional summary email accompanying
-`QVI_Task3_ClientReport.pdf`. It leads with the key recommendation, highlights the
-three main customer segments and the statistically significant trial uplift, and
-offers to discuss the findings ahead of the category review — demonstrating the
-ability to translate technical analysis into concise, actionable stakeholder
-communication.
+A short summary email to the Category Manager (Julia) accompanying the report,
+translating the analysis into a clear, actionable message:
+
+> **Subject:** Chip Category Review — Key Findings & Recommendation
+>
+> Hi Julia,
+>
+> Attached is the full chip category review. In short: three segments drive most
+> sales — Budget Older Families, Mainstream Young Singles/Couples, and Mainstream
+> Retirees — and the layout trial produced a statistically significant sales uplift
+> in stores 77 and 88. My recommendation is to protect the high-volume family
+> shoppers, target premium-willing singles & couples, and roll out the new layout
+> after confirming why store 86 behaved differently.
+>
+> Happy to walk through the details ahead of the review.
+>
+> Best,
+> Fariba
 
 ---
 
