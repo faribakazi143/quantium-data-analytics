@@ -24,7 +24,8 @@ rows), engineered pack-size and brand features, and merged in customer segments
   pay the highest price per packet ($4.07 vs $3.69, t = 37.6, p < 0.001)
 - Kettle is the #1 brand; 175g sharing packs are the most-bought format
 
-📄 `QVI_Task1_CustomerAnalytics.pdf`
+![Total chip sales by customer segment](sales_by_segment.png)
+![Top 10 chip brands by total sales](top_brands.png)
 
 ---
 
@@ -43,7 +44,7 @@ control's 5–95% confidence band (t-test, 7 d.o.f.).
 - Trial 86 → control 155: customers up significantly, but sales inconclusive —
   flagged for follow-up (possible different implementation/pricing)
 
-📄 `QVI_Task2_TrialAnalysis.pdf`
+![Trial uplift — store 77 vs control](trial_uplift_store77.png)
 
 ---
 
